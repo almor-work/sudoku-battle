@@ -1,0 +1,27 @@
+{
+  "name": "almor/sudoku",
+  "description": "sudoku",
+  "type": "project",
+  "require": {
+    "php": "~7.2",
+    "yiisoft/yii2": "~2.0.31",
+    "consik/yii2-websocket": "^1.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "^2.1"
+  },
+  "replace": {
+    "bower-asset/jquery": "*",
+    "bower-asset/jquery.inputmask": "*",
+    "bower-asset/inputmask": "*",
+    "bower-asset/punycode": "*",
+    "bower-asset/yii2-pjax": "*"
+  },
+  "conflict": {
+    "bower-asset/jquery": "*",
+    "bower-asset/jquery.inputmask": "*",
+    "bower-asset/inputmask": "*",
+    "bower-asset/punycode": "*",
+    "bower-asset/yii2-pjax": "*"
+  }
+}
