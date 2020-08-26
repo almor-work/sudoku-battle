@@ -2,15 +2,20 @@
 
 namespace app\controllers;
 
+use app\models\Sudoku;
+use Yii;
 use yii\web\Controller;
 
 class SiteController extends Controller
 {
-    /**
-     * Displays homepage
-     */
     public function actionIndex(): string
     {
-        return $this->render('index');
+        $this->view->title = Yii::$app->name;
+
+        $sudoku = Sudoku::getCurrent();
+
+        return $this->render('index', [
+            'sudoku' => $sudoku
+        ]);
     }
 }
